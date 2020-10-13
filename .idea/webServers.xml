@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f202f1b8-c0e3-46aa-ab6e-f88abbf7f57e" name="S29">
+        <fileTransfer rootFolder="/opt/pyx/s29" accessType="SFTP" host="192.168.0.120" port="22" sshConfigId="353077b4-26bb-4ee5-b002-fc3f35d93d35" sshConfig="root@192.168.0.120:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
