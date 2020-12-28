@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .img{
+            width: 200px;
+            height: 200px;
+            border: solid red 1px;
+        }
+    </style>
+
+
+</head>
+<body>
+<button class="add">ADD</button>
+<button class="remove">REMOVE</button>
+<button class="rep">REP</button>
+
+    <div class="outer">
+        <p>一幅图</p>
+        <div class="img"></div>
+    </div>
+
+    <div>
+        <p>welcome</p>
+        <h2 class="c1">Welcome</h2>
+    </div>
+
+<script src="jquery3.js"></script>
+<script>
+    $(".add").click(function (){
+        var $img=$("<img src='https://699pic.com/tupian-501430512.html'>")
+        $img.append($img)
+    });
+</script>
+
+
+
+</body>
+</html>

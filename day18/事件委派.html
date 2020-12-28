@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button class="btn">ADD</button>
+<ul>
+    <li>123</li>
+    <li>234</li>
+    <li>345</li>
+    <li>456</li>
+    <p>nihaoya</p>
+</ul>
+
+<script src="jquery3.js"></script>
+<script>
+
+    // $("ul li").click(function () {
+    //     alert($(this).html())
+    // });
+   //事件委派
+    // $("ul li").bind("click",function (){
+    //     alert($(this).html())
+    // });
+
+
+    //委派个父亲ul
+    $("ul").on("click","li",function () {
+         alert($(this).html())
+    });
+
+    $(".btn").click(function (){
+       //f.appenchild(子节点对象)
+        //jq 父节点jq对象
+        $("ul").append("<li>999</li>")
+
+    });
+
+
+
+</script>
+
+</body>
+</html>
